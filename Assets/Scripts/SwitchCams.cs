@@ -10,6 +10,13 @@ public class SwitchCams : MonoBehaviour
     {
         ChangePriorities();
     }
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.V))
+        {
+            ChangePriorities();
+        }
+    }
     public void ChangePriorities()
     {
         change = !change;
