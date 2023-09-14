@@ -6,6 +6,7 @@ public class SwitchCams : MonoBehaviour
     [SerializeField] CinemachineVirtualCameraBase[] cam;
     [SerializeField] int priorityBoostAmount = 5;
     bool change = false;
+    private Coroutine Coroutine;
     private void Start()
     {
         ChangePriorities();
